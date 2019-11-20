@@ -1,0 +1,232 @@
+html,body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Black Ops One', cursive;
+}
+
+p,a {
+    font-size: 26px;
+}
+
+header {
+    margin: 0px;
+    width: 100%;
+    background: black;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login a{
+    text-decoration: none;
+}
+
+.log-pwd {
+    color: white;
+    border: 20px solid black;
+    font-size: 20px;
+}
+
+.log-pwd:hover {
+    background: white;
+    color: black;
+}
+
+.tpl-header {
+    margin: 0px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 60px;
+}
+
+.li {
+    display: inline;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.div-nav a{
+    border:solid 20px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white ;
+    color: black;
+}
+
+.div-nav a:hover {
+    
+    border:solid 20px black;
+    background: black;
+    color: white;
+}
+
+hr {
+    border:1px solid black;
+    margin:20px auto;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hr-bvn {
+    border-radius: 50%;
+}
+
+.bvn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 80px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.FM {
+    font-size: 64px;
+}
+
+.discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-discord {
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.img-discord {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-facebook {
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.img-facebook {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.pseudo, .mail, .password, .repassword, .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 2px solid black;
+}
+
+footer {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-footer {
+    font-size: 50px;
+}
+
+p.error {
+    text-align: center;
+    color: red;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+    font-family: 'Black Ops One', cursive;
+    background: black;
+    border:black;
+    color: white;
+    font-size:20px;
+}
+  
+button:hover {
+    font-family: 'Black Ops One', cursive;
+    background: white;
+    border:white;
+    color: black;
+}
