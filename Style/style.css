@@ -1,0 +1,463 @@
+body {
+margin: 0;
+padding: 0;
+background: white;
+color: black;
+font-family: 'Black Ops One', cursive;
+}
+
+p,a {
+    font-size: 26px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/*Css en-tête*/
+
+header {
+    margin: 0px;
+    width: 100%;
+    background: black;
+}
+
+.logo {
+    margin: 60px;
+    width: 1000px;
+    border: black solid 50px;
+}
+
+.tpl-header {
+    margin: 0px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    margin-right:15px
+}
+
+.login {
+    margin-left:15px
+}
+
+.register:hover {
+    background: white;
+    color: black;
+}
+
+.div-register:hover {
+    background: white;
+    color: black;
+}
+
+.login:hover {
+    background: white;
+    color: black;
+}
+
+.div-login:hover {
+    background: white;
+    color: black;
+}
+
+.log-pwd {
+    color: white;
+    border: 20px solid black;
+    font-size: 20px;
+}
+
+.log-pwd:hover {
+    background: white;
+    color: black;
+}
+
+/*Css Navigation*/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: white ;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.div-nav a {
+    border:solid 20px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white ;
+    color: black;
+}
+
+.div-nav a:hover {
+    
+    border:solid 20px black;
+    background: black;
+    color: white;
+}
+
+/*Css menu burger*/
+section a:hover {
+    color: black;
+}
+
+.a-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-burger:hover {
+    background: white;
+    color: black;
+}
+
+.a-burger a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/*
+* Just a quick hamburger
+*/
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+    font-family: 'Black Ops One', cursive;
+}
+
+/*
+* But let's hide the middle one.
+*/
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+* Ohyeah and the last one should go the other direction
+*/
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: black;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 40px;
+}
+
+.li {
+    display: inline;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+/*
+* And let's slide it in from the left
+*/
+#menuToggle input:checked ~ ul {
+transform: none;
+}
+
+/*Css tableau formulaire inscription*/
+
+table {
+    border:2px black solid;
+    background: black;
+    color: white;
+    width: 1000px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.form-input {
+    margin: 10px ;
+    font-family: 'Black Ops One', cursive;
+    font-size: 26px;
+    width: 250px;
+}
+
+.form-input:hover {
+    background: white;
+    color: black;
+    
+}
+
+.form-label {
+    margin-left: 10px ;
+    font-family: 'Black Ops One', cursive;
+    font-size: 26px;
+}
+
+input{
+    margin-top: 10px;
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+    background: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 18px;
+}
+
+input:hover{
+    background: black;
+    color: white;
+}
+
+/*Css corp body*/
+
+hr {
+    border:1px solid black;
+    margin:20px auto;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hr-bvn {
+    border-radius: 50%;
+}
+
+.hr-bvn-top {
+    border-radius: 50%;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 80px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 64px;
+}
+
+.FM-blue {
+    font-size: 64px;
+    color:#000099;
+}
+
+.FM-red {
+    font-size: 64px;
+    color:#990000;
+}
+
+.discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-discord {
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.img-discord {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-facebook {
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.img-facebook {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.pseudo, .mail, .password, .repassword, .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: black;    
+    margin-top: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-footer {
+    font-size: 50px;
+}
+
+p.error {
+    text-align: center;
+    color: #990000;
+}
+
+/*Responsive*/
+
+@media all and (max-width: 1070px){
+
+    header {
+        margin: 0px;
+        width: 100%;
+        height: 150%;
+        background: black;
+    }
+    .logo {
+        width:80vw;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    .menu-burger{
+        margin-top: -100px;
+    }
+    .section {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .size {
+        font-size: 30px!important;
+    }
+
+    .link-facebook,.link-discord {
+        font-size: 20px!important;
+        margin-top: 50px;
+    }
+
+    .img-discord,.img-facebook {
+        width: 25vw;
+        margin-top: 50px;
+    }
+
+    .hr-bvn{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media all and (min-width: 1070px){
+    .menu-burger{
+        visibility: hidden;
+    }
+}
